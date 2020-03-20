@@ -8,14 +8,39 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    let center = UNUserNotificationCenter.current()
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        center.delegate = self as! UNUserNotificationCenterDelegate
+        center.getNotificationSettings { (setting) in
+            if setting.authorizationStatus == .notDetermined{
+                let options : UNAuthorizationOptions = [.alert, .sound, .carPlay, .badge]
+                
+                self.center.requestAuthorization(options: options) { (success, erro) in
+                    if erro == nil{
+                        print(success)
+                    }else{
+                        print(erro?.localizedDescription)
+                    }
+                }
+                
+            }
+            else{
+                 
+            }
+        }
+        
+        
+        
         return true
     }
 

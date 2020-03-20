@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,60 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvz-Qc-SgE">
+                                <rect key="frame" x="0.0" y="458" width="423" height="438"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="DVC-JN-js1">
+                                        <rect key="frame" x="20" y="103" width="383" height="335"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="DVC-JN-js1" firstAttribute="top" secondItem="qvz-Qc-SgE" secondAttribute="top" constant="103" id="Dvr-61-N29"/>
+                                    <constraint firstAttribute="trailing" secondItem="DVC-JN-js1" secondAttribute="trailing" constant="20" symbolic="YES" id="ca5-GY-EHc"/>
+                                    <constraint firstItem="DVC-JN-js1" firstAttribute="leading" secondItem="qvz-Qc-SgE" secondAttribute="leading" constant="20" symbolic="YES" id="dDI-k6-ozI"/>
+                                    <constraint firstItem="DVC-JN-js1" firstAttribute="leading" secondItem="qvz-Qc-SgE" secondAttribute="leading" constant="20" symbolic="YES" id="u0L-Px-P1W"/>
+                                    <constraint firstAttribute="bottom" secondItem="DVC-JN-js1" secondAttribute="bottom" id="xzB-fG-oPp"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_inotification" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXC-LP-Qdk">
+                                <rect key="frame" x="94.666666666666686" y="335.66666666666669" width="225" height="225.00000000000006"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iNotification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT4-jR-2AV">
+                                <rect key="frame" x="37" y="98" width="320" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="ryq-XL-SEB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28222614530000001" green="0.75965386629999998" blue="0.70901173350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qvz-Qc-SgE" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="458" id="7wp-ZC-xJN"/>
+                            <constraint firstItem="fT4-jR-2AV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="97s-ox-LcU"/>
+                            <constraint firstItem="qXC-LP-Qdk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9yt-a3-CmC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fT4-jR-2AV" secondAttribute="trailing" constant="57" id="FM0-NM-Xct"/>
+                            <constraint firstItem="fT4-jR-2AV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="MV9-IM-Wq7"/>
+                            <constraint firstAttribute="bottom" secondItem="qvz-Qc-SgE" secondAttribute="bottom" id="b5W-3o-bRa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qvz-Qc-SgE" secondAttribute="trailing" constant="-29" id="eJP-Cb-TdV"/>
+                            <constraint firstItem="qXC-LP-Qdk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hFy-zc-cd7"/>
+                            <constraint firstItem="qvz-Qc-SgE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xhg-XL-b13"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_inotification" width="225" height="225"/>
+        <image name="paper" width="2000" height="1942"/>
+    </resources>
 </document>

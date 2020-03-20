@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8A5EA154241949C000017E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EA153241949C000017E3C /* AppDelegate.swift */; };
 		8A5EA156241949C000017E3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EA155241949C000017E3C /* SceneDelegate.swift */; };
-		8A5EA158241949C000017E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EA157241949C000017E3C /* ViewController.swift */; };
 		8A5EA15B241949C000017E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5EA159241949C000017E3C /* Main.storyboard */; };
 		8A5EA15E241949C000017E3C /* Remember_me.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EA15C241949C000017E3C /* Remember_me.xcdatamodeld */; };
 		8A5EA160241949C900017E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5EA15F241949C900017E3C /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		8A5EA150241949C000017E3C /* Remember_me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remember_me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5EA153241949C000017E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5EA155241949C000017E3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A5EA157241949C000017E3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A5EA15A241949C000017E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A5EA15D241949C000017E3C /* Remember_me.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Remember_me.xcdatamodel; sourceTree = "<group>"; };
 		8A5EA15F241949C900017E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A020615242321130029B319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A5EA16C2419B5EB00017E3C /* StudyManager.swift */,
+				8A5EA1702419E12D00017E3C /* StudyPlanTableViewController.swift */,
+				8A5EA16E2419E0E900017E3C /* StudyPlanViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0206162423214B0029B319 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A5EA16A2419B41300017E3C /* StudyPlain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8A5EA147241949BF00017E3C = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +82,15 @@
 		8A5EA152241949C000017E3C /* Remember_me */ = {
 			isa = PBXGroup;
 			children = (
+				8A0206162423214B0029B319 /* Model */,
+				8A020615242321130029B319 /* View */,
 				8A5EA153241949C000017E3C /* AppDelegate.swift */,
 				8A5EA155241949C000017E3C /* SceneDelegate.swift */,
-				8A5EA157241949C000017E3C /* ViewController.swift */,
 				8A5EA159241949C000017E3C /* Main.storyboard */,
 				8A5EA15F241949C900017E3C /* Assets.xcassets */,
 				8A5EA161241949C900017E3C /* LaunchScreen.storyboard */,
 				8A5EA164241949C900017E3C /* Info.plist */,
 				8A5EA15C241949C000017E3C /* Remember_me.xcdatamodeld */,
-				8A5EA16A2419B41300017E3C /* StudyPlain.swift */,
-				8A5EA16C2419B5EB00017E3C /* StudyManager.swift */,
-				8A5EA16E2419E0E900017E3C /* StudyPlanViewController.swift */,
-				8A5EA1702419E12D00017E3C /* StudyPlanTableViewController.swift */,
 			);
 			path = Remember_me;
 			sourceTree = "<group>";
@@ -155,7 +168,6 @@
 			files = (
 				8A5EA1712419E12D00017E3C /* StudyPlanTableViewController.swift in Sources */,
 				8A5EA15E241949C000017E3C /* Remember_me.xcdatamodeld in Sources */,
-				8A5EA158241949C000017E3C /* ViewController.swift in Sources */,
 				8A5EA154241949C000017E3C /* AppDelegate.swift in Sources */,
 				8A5EA156241949C000017E3C /* SceneDelegate.swift in Sources */,
 				8A5EA16B2419B41300017E3C /* StudyPlain.swift in Sources */,
